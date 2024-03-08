@@ -8,8 +8,12 @@ const config: HardhatUserConfig = {
   },
   networks: {
       merlinTestnet: {
-      url: `https://testnet-rpc.merlinchain.io`,
-      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+        url: `https://testnet-rpc.merlinchain.io`,
+        accounts: [process.env.ACCOUNT_PRIVATE_KEY],
+      },
+      merlin: {
+        url: `https://rpc.merlinchain.io`,
+        accounts: [process.env.ACCOUNT_PRIVATE_KEY],
       },
   },
 };

@@ -2,7 +2,9 @@
   "name": "hardhat-project",
   "scripts": {
     "compile": "npx hardhat compile",
-    "deploy": "npx hardhat run scripts/deploy.ts --network merlinTestnet"
+    "deploy": "npx hardhat run scripts/deploy.ts --network merlinTestnet",
+    "deploy:testnet": "npx hardhat run scripts/deploy.ts --network merlinTestnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.ts --network merlin"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
